@@ -22,6 +22,9 @@ const Player = () => {
           <span className="player-name">
               Michal
           </span>
+
+          <Counter />
+
       </div>
     );
 }
