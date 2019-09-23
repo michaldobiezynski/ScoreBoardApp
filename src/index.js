@@ -7,7 +7,8 @@ import * as serviceWorker from './serviceWorker';
 serviceWorker.unregister();
 
 
-function Header() {
+function Header(props) {
+    console.log(props)
     return (
         <header>
             <h1>Scoreboard</h1>
@@ -42,8 +43,7 @@ const Counter = () => {
 const App = () => {
     return (
         <div className="scoreboard">
-        <Header />
-
+        <Header titile="Scoreboard" totalPlayers={1} />
             {/* Players list */}
         <Player />
         </div>
