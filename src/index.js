@@ -6,6 +6,25 @@ import * as serviceWorker from './serviceWorker';
 
 serviceWorker.unregister();
 
+const players = [
+    {
+      name: "Michal",
+      score: 50
+    },
+    {
+        name: "Marco",
+        score: 70
+    },
+    {
+        name: "Wika",
+        score: 30
+    },
+    {
+        name: "Frodo",
+        score: 95
+    }
+];
+
 
 function Header(props) {
     console.log(props)
@@ -45,27 +64,24 @@ const App = () => {
         <div className="scoreboard">
         <Header
             title="My Scoreboard"
-            totalPlayers={11} />
+            totalPlayers={3} />
 
             {/* Players list */}
-        <Player
-        name="Michal"
-        score={50}/>
             <Player
-                name="Wika"
-                score={90}/>
+                name="Michal"
+                score={50}/>
             <Player
-                name="Steve"
-                score={20}/>
+                name="Steven"
+                score={100}/>
             <Player
-                name="Marco"
-                score={30}/>
+                name="Keith"
+                score={70}/>
         </div>
     )
 }
 
 ReactDOM.render(
-    <App />,
+    <App initialPlayers={players}/>,
     document.getElementById('root')
 );
 
