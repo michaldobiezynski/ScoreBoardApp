@@ -5,8 +5,7 @@ import * as serviceWorker from './serviceWorker.js';
 serviceWorker.unregister();
 
 
-function Header(props) {
-    console.log(props)
+const Header = (props) => {
     return (
         <header>
             <h1>{props.title}</h1>
