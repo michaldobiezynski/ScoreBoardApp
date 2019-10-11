@@ -1,18 +1,10 @@
 import React from 'react';
+import Header from "./Header";
 import '../App.css';
 import * as serviceWorker from './serviceWorker.js';
 
 serviceWorker.unregister();
 
-
-const Header = (props) => {
-    return (
-        <header>
-            <h1>{props.title}</h1>
-            <span className="stats">Players: {props.totalPlayers}</span>
-        </header>
-    );
-}
 
 
 const Player = (props) => {
