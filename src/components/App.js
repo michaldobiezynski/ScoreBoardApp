@@ -1,26 +1,11 @@
 import React from 'react';
 import Header from "./Header";
+import Player from "./Player";
 import '../App.css';
 import * as serviceWorker from './serviceWorker.js';
 
 serviceWorker.unregister();
 
-
-
-const Player = (props) => {
-    return (
-        <div className="player">
-          <span className="player-name">
-              <button className="remove-player"
-                      onClick={ () => props.removePlayer(props.id) }>✖</button>
-              {props.name}
-          </span>
-
-            <Counter/>
-
-        </div>
-    );
-}
 
 class Counter extends React.Component {
 
