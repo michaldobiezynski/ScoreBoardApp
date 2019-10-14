@@ -1,7 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 
-class Counter extends Component {
-
+const Counter = (props) => {
 
     incrementScore = () => {
         this.setState(prevState => {
@@ -19,7 +18,7 @@ class Counter extends Component {
         })
     };
 
-    render() {
+
         return (
             <div className="counter">
                 <button className="counter-action decrement"> -
@@ -30,6 +29,5 @@ class Counter extends Component {
             </div>
         );
     }
-}
 
 export default Counter;
