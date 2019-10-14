@@ -3,6 +3,7 @@ import Header from "./Header";
 import Player from "./Player";
 import '../App.css';
 import * as serviceWorker from './serviceWorker.js';
+import AddPlayerFrom from './AddPlayerForm';
 
 serviceWorker.unregister();
 
@@ -71,7 +72,7 @@ class App extends Component {
                         />
                 )}
 
-
+            <AddPlayerFrom/>
             </div>
         )
     }
