@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from "react";
 import Header from "./Header";
 import Player from "./Player";
 import '../App.css';
@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker.js';
 
 serviceWorker.unregister();
 
-class App extends React.Component {
+class App extends Component {
 
     state = {
         players: [
