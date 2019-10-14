@@ -49,6 +49,7 @@ class App extends Component {
     handleAddPlayer = (name) => {
         this.setState({
             players: [
+                ...this.state.players,
                 {
                     name: name,
                     score: 0,
