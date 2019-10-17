@@ -1,6 +1,9 @@
+/* eslint-disable */
 import React, {PureComponent} from "react";
 import Counter from "./Counter";
+import Crown from './Crown';
 import PropTypes from 'prop-types';
+
 
 class Player extends PureComponent {
 
@@ -28,6 +31,8 @@ class Player extends PureComponent {
           <span className="player-name">
               <button className="remove-player"
                       onClick={ () => removePlayer(id) }>✖</button>
+
+               <Crown isHighScore={this.props.isHighScore} />
               {name}
           </span>
 
