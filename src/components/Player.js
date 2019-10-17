@@ -11,7 +11,7 @@ class Player extends PureComponent {
          removePlayer,
          changeScore,
      } = this.props;
-     
+
      return (
          <div className="player">
           <span className="player-name">
